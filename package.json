@@ -1,0 +1,19 @@
+{
+  "name": "gi-skill-catfacts",
+  "description": "Cat facts skill for Good Intentions Assistant",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Darren Moore",
+    "email": "darren.m@firecreekweb.com",
+    "url": "http://goodintentions.firecreekweb.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoodIntentionsAssistant/gi-skill-catfacts.git"
+  },
+  "licenses": [],
+  "dependencies": {
+  },
+  "keywords": []
+}

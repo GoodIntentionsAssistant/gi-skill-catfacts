@@ -1,7 +1,7 @@
 /**
  * Cat Facts Skill
  */
-var Skill = require('../../../src/Skill/skill');
+var Skill = girequire('src/Skill/skill');
 
 module.exports = class CatFactsSkill extends Skill {
 

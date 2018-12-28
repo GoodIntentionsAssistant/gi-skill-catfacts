@@ -1,11 +1,13 @@
 /**
  * Cat Facts Intent
  */
-const Intent = require('../../../../src/Intent/intent');
+const Intent = girequire('src/Intent/intent');
+const Config = girequire('src/Config/config');
+
 const Promise = require('promise');
 const _ = require('underscore');
 
-module.exports = class CatfactsIntent extends Intent {
+module.exports = class CatFactsIntent extends Intent {
 
 	setup() {
 		this.train([
@@ -16,7 +18,7 @@ module.exports = class CatfactsIntent extends Intent {
 	}
 
 	response(request) {
-		let filename = request.app.Path.get('skills.app')+'/CatFacts/Data/catfacts.txt';
+		let filename = Config.path('skills.app')+'/CatFacts/Data/catfacts.txt';
 
 		return new Promise((resolve, reject) => {
 			let fs = require('fs');
